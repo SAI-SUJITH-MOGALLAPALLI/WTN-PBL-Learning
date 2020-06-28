@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>WTN PBL Practice</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/JavaFundamentals/MiniProject1/MiniProject-1.docx</name>
+			<type>1</type>
+			<location>D:/WTN/MiniProjects/MiniProject-1.docx</location>
+		</link>
+		<link>
+			<name>src/LogicBuildingPlanM1/Day2/Screenshot (311).png</name>
+			<type>1</type>
+			<location>C:/Users/sujit/OneDrive/Pictures/Screenshots/Screenshot (311).png</location>
+		</link>
+		<link>
+			<name>src/OopsAndInheritence/MiniProject2/Description/MiniProject2-Description-1.jpg</name>
+			<type>1</type>
+			<location>D:/MiniProject2-Description-1.jpg</location>
+		</link>
+		<link>
+			<name>src/OopsAndInheritence/MiniProject2/Description/MiniProject2-Description-2.jpg</name>
+			<type>1</type>
+			<location>D:/MiniProject2-Description-2.jpg</location>
+		</link>
+		<link>
+			<name>src/OopsAndInheritence/MiniProject2/Description/MiniProject2-Description-3.jpg</name>
+			<type>1</type>
+			<location>D:/MiniProject2-Description-3.jpg</location>
+		</link>
+		<link>
+			<name>src/OopsAndInheritence/MiniProject2/Description/MiniProject2-Description-4.jpg</name>
+			<type>1</type>
+			<location>D:/MiniProject2-Description-4.jpg</location>
+		</link>
+	</linkedResources>
+</projectDescription>
