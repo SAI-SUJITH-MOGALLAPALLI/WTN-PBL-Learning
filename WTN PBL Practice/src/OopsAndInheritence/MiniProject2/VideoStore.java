@@ -1,5 +1,7 @@
 package OopsAndInheritence.MiniProject2;
 
+import java.util.Arrays;
+
 public class VideoStore {
 	Video[] store;
 	void addVideo(String name) {
@@ -9,26 +11,30 @@ public class VideoStore {
 		}
 		catch(Exception ex) {
 			storeLength=0;
+			Video video=new Video(name);
+			Video[] temp=new Video[storeLength+1];
+			temp[storeLength]=video;
+			store=temp;
+			System.out.println("Video \""+name+"\" added successfully.");
+			return;
 		}
-		Video video=new Video(name);
-		Video[] temp=new Video[storeLength+1];
-		temp[storeLength]=video;
-		store=temp;
+		store=Arrays.copyOf(store,storeLength+1);
+		store[store.length-1]=new Video(name); 
 		System.out.println("Video \""+name+"\" added successfully.");
 	}
 	void doCheckout(String name) {
-		int flag=0;
-		for(int i=0;i<store.length;i++) {
-			if(store[i].getName().equalsIgnoreCase(name)) {
-				store[i].doCheckout();
-				flag=1;
-				break;
+		try {
+			for(int i=0;i<store.length;i++) {
+				if(store[i].getName().equalsIgnoreCase(name)) {
+					store[i].doCheckout();
+					break;
+				}
 			}
+				System.out.println("Vedio \""+name+"\" checked out successfully.");
 		}
-		if(flag==1)
-			System.out.println("Vedio \""+name+"\" checked out successfully.");
-		else 
+		catch(Exception ex) {
 			System.out.println("Vedio \""+name+"\" does not added to the store.\n");
+		}
 	}
 	void doReturn(String name) {
 		int flag=0;
